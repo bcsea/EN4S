@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 19px;
+    font-weight: 100;
+    --ocean: #4f9ac3;
+    --clay: #c3894f;
+}
+body {
+    background-color: #f5f5f5;
+}
+
+section {
+    color: #272f40;
+    width: 100%;
+    float: none;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.spacer {
+    display: block;
+    height: 30px;
+}
+
+#poster {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    /* height: auto; */
+    padding: 150px 0px;
+    /* background-size: cover;
+    background-position: bottom; */
+    justify-content: flex-start;
+    align-items: center;
+    -webkit-clip-path: ellipse(117% 65% at 27% 28%);
+    clip-path: ellipse(117% 65% at 27% 28%);
+    /* background-color: #0c3833; */
+    background-color: black;
+
+    display: grid;
+    grid-template-areas: ""
+}
+#poster #container {
+    margin-left: 15vw;
+    margin-right: auto;
+    display: flex;
+    color: #fbfbfb;
+    background-color: transparent;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#big-logo {
+    width: 250px;
+}
+h1 {
+    font-family: 'BenchNine', sans-serif;
+    font-size: 55px;
+    font-weight: lighter;
+    letter-spacing: 22px;
+}
+.ghostButton {
+    color: #fbfbfb;
+    padding: 10px;
+    border: solid 2px #fbfbfb;
+    border-radius: 5px;
+    text-decoration-line: none;
+    transition: all 0.4s;
+}
+.ghostButton:hover {
+    background-color: white;
+    border-color: white;
+    color: black;
+}
+#twitter::before {
+    content: "";
+    /* display: block; */
+    background: url("img/twitter.png") no-repeat;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin: 0 6px 0 0;
+}
+
+#underPoster {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #54a59b;
+    height: 136px;
+    margin-top: -174px;
+    clip-path: ellipse(80% 90% at 26% 8%);
+    z-index: -5;
+    position: relative; */
+    clip-path: ellipse(121% 65% at 80% 28%);
+    z-index: -1;
+    position: relative;
+    height: 400px;
+    background-color: #4f9ac3;
+    margin-top: -145px;
+    box-shadow: inset #476b9e 20px -12px 180px -92px;
+}
+#underPoster {
+    color: white;
+}
+
+#plan {
+    padding: 30px 20% 0px 20%;
+    text-align: center;
+    position: relative;
+    z-index: -11;
+    margin-top: -127px;
+}
+#plan .backdrop-video {
+    position: absolute;
+    z-index: -5;
+    left: 0;
+    /* right: 0; */
+    top: 0;
+    bottom: 0;
+    /* height: 676px; */
+    margin-top: -250px;
+    opacity: 0.5;
+}
+
+#steps {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+#steps .oneThird {
+    display: flex;
+    max-width: 350px;
+    min-width: 150px;
+    margin: 3%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.stepImage {
+    max-width: 100%;
+}
+
+.darkBg {
+    background-color: rgb(230, 230, 230);
+    border-top: solid rgb(187, 187, 187) 1px;
+    border-bottom: solid rgb(187, 187, 187) 1px;
+}
+#prizeImg {
+    width: 65%;
+}
+#examples, #prizes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px;
+}
+#slider {
+    width:576px;
+    height:432px;
+}
+@media screen and (max-width: 576px){
+    #slider {
+        transform: scale(0.6);
+    }
+    #prizeImg {
+        width: 90%;
+    }
+}
+
+#sponsors {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.sponsorContainer {
+    width: 100%;
+    padding: 10px 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.reaperLogo {
+    padding: 20px;
+    min-width: 60px;
+    max-width: 300px;
+}
+.mediaLogo {
+    padding: 20px;
+    min-width: 90px;
+    max-width: 230px;
+}
+
+#location {
+    display: flex;
+    color: white;
+    background: url('img/7gate.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    box-shadow: 0px -2px 10px 2px #00000087;
+    padding: 50px 20%;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+#location #container {
+    display: flex;
+    flex-direction: column;
+}
+
+#footer {
+    z-index: 5;
+    background-color: #16162d;
+    box-shadow: 0px -2px 10px 2px #00000087;
+    color: white;
+    text-align: center;
+    padding: 5%;
+}
+#footer a {
+    color: coral;
+}
+
+@keyframes sp00ky {
+    0% { filter: invert(0) }
+    40% { filter: invert(0) }
+    60% { filter: invert(1) }
+    100% { filter: invert(1) }
+}
