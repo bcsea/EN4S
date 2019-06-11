@@ -5,8 +5,15 @@
     font-family: sans-serif;
     font-size: 19px;
     font-weight: 100;
+
+    /*Theme colors*/
     --ocean: #4f9ac3;
     --clay: #c3894f;
+    --eggshell: #fbfbfb;
+    --bone: #f5f5f5;
+    --ash: #e6e6e6;
+    --pencil: #bbbbbb;
+    --ink: #272f40;
 }
 body {
     background-color: #f5f5f5;
@@ -57,7 +64,7 @@ strong {
     justify-content: center;
     text-align: center;
 }
-#big-logo {
+.logo {
     width: 250px;
 }
 h1 {
@@ -92,6 +99,7 @@ h1 {
 
 #underPoster {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     /* background-color: #54a59b;
@@ -107,17 +115,18 @@ h1 {
     background-color: #4f9ac3;
     margin-top: -145px;
     box-shadow: inset #476b9e 20px -12px 180px -92px;
-}
-#underPoster {
     color: white;
 }
+#underPoster .sole-logo {
+    display: block;
+}
+
 
 #plan {
     padding: 30px 20% 0px 20%;
     text-align: center;
     position: relative;
-    z-index: -11;
-    margin-top: -127px;
+    margin-top: 45px;
 }
 #plan .backdrop-video {
     position: absolute;
@@ -152,31 +161,14 @@ h1 {
 }
 
 .darkBg {
-    background-color: rgb(230, 230, 230);
-    border-top: solid rgb(187, 187, 187) 1px;
-    border-bottom: solid rgb(187, 187, 187) 1px;
+    background-color: #e6e6e6;
+    border-top: solid #bbbbbb 1px;
+    border-bottom: solid #bbbbbb 1px;
 }
-#prizeImg {
-    width: 65%;
-}
-#examples, #prizes {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+#action {
     align-items: center;
-    padding: 50px 0px;
-}
-#slider {
-    width:576px;
-    height:432px;
-}
-@media screen and (max-width: 576px){
-    #slider {
-        transform: scale(0.6);
-    }
-    #prizeImg {
-        width: 90%;
-    }
+    justify-content: center;
+    text-align: center;
 }
 
 #sponsors {
