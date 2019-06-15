@@ -132,11 +132,12 @@ h1 {
     position: absolute;
     z-index: -5;
     left: 0;
+    width: 100%;
     /* right: 0; */
     top: 0;
     bottom: 0;
     /* height: 676px; */
-    margin-top: -250px;
+    margin-top: -150px;
     opacity: 0.5;
 }
 
