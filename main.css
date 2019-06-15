@@ -233,3 +233,88 @@ h1 {
     60% { filter: invert(1) }
     100% { filter: invert(1) }
 }
+
+/* TEAM MEMEBERS SECTION */
+#teamMemberWrapper {
+    text-align: center;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+    position: relative;
+}
+
+#teamMemberWrapper h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+#teamMemberGrid {
+    margin-left: 7vw;
+    margin-right: 7vw;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.teamMember {
+    text-align: center;
+    width: 12rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding-bottom: 2rem;
+}
+
+.teamMemberPhoto {
+    display: inline-block;
+    position: relative;
+    width: 9rem;
+    height: 9rem;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-bottom: 0.9rem;
+}
+
+.teamMemberPhoto img {
+    width: auto;
+    height: 100%;
+    margin-left: 0px;
+}
+
+.teamMemberName {
+    font-size: 1.3rem;
+    margin-bottom: 0.4rem;
+}
+
+.teamMember p {
+    font-size: 0.88rem;
+}
+
+@media (max-width: 640px) {
+    #teamMemberWrapper {
+        padding-bottom: 3rem;
+        padding-top: 3rem;
+    }
+
+    #teamMemberGrid {
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+
+    .teamMember {
+        padding-bottom: 2rem;
+        width: 8rem;
+    }
+
+    .teamMemberName {
+        font-size: 0.9rem;
+    }
+
+    .teamMember p {
+        font-size: 0.7rem;
+    }
+
+    .teamMemberPhoto {
+        width: 8rem;
+        height: 8rem;
+    }
+}
