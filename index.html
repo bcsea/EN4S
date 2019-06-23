@@ -63,20 +63,33 @@
         <img class="logo" id="sole-logo" src="./img/bc-logo-on-dark.png" alt="">
     </section>
     <section id="plan">
-        <video class="backdrop-video" src="vid/bagels.mkv" loop autoplay muted></video>
-        <div class="spacer"></div>
     </section>
-    <section id="blogVideo">
+    <section class="backdrop-video-container" id="blogVideo">
+        <video class="backdrop-video" src="vid/bagels.mkv" loop autoplay muted></video>
         <div id="blogVideoGrid">
-            <div class="blogTile">
-              <div class="blogPhoto"></div>
-                <h2 class="blogText">Saving BC Unicorns, This Time For Real</h2>
-                <a href="https://www.bcsea.org/bcsea-news/saving-bc-unicorns" target="_blank">
-                    <p class="blogText">Read our latest blog...</p>
-                </a>
+            <div class="blogTiles">
+                <h2>Featured from our blog</h2>
+                <div class="blogTile">
+                    <img class="blogPhoto bottomBlogPhoto" src="https://www.bcsea.org/sites/default/files/styles/event_teaser/public/fc-images/en4s.png?itok=ZbvqqHxf"/>
+                    <div class="blogTexts">
+                        <h3 class="blogText">Saving BC Unicorns, This Time For Real</h3>
+                        <a href="https://www.bcsea.org/bcsea-news/saving-bc-unicorns" target="_blank">
+                            <p class="blogText">Read on...</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="blogTile">
+                    <img class="blogPhoto bottomBlogPhoto" src="https://www.bcsea.org/sites/default/files/styles/event_teaser/public/fc-images/arman.jpg?itok=mKW4lkHv"/>
+                    <div class="blogTexts">
+                        <h3 class="blogText">EN4S Is Born</h3>
+                        <a href="https://www.bcsea.org/bcsea-news/en4s-born" target="_blank">
+                            <p class="blogText">Read on...</p>
+                        </a>
+                    </div>
+                </div>
             </div>
             <div class="videoTile">
-                <h2 class="videoTitle">Title for the video</h2>
+                <h2 class="videoTitle">Watch our latest video</h2>
                 <div class="spacer"></div>
                 <div>
                     <iframe width="100%" height="300px" src="https://www.youtube.com/embed/tgbNymZ7vqY">
@@ -85,7 +98,7 @@
             </div>
         </div>
     </section>
-    <section id="steps">
+    <!-- <section id="steps">
         <div class="oneThird">
             <div><img class="stepImage" src="img/s1.png" alt=""></div>
             <div class="stepCaption">Step 1: <strong>Choose</strong></div>
@@ -98,13 +111,40 @@
             <div><img class="stepImage" src="img/s3.png" alt=""></div>
             <div class="stepCaption">Step 3: <strong>Build</strong></div>
         </div>
-    </section>
-    <section class="darkBg" id="action">
+    </section> -->
+    <section class="darkBg" id="testimonialWrapper">
         <div class="spacer"></div>
-        <div class="spacer"></div>
-        <h2>Call To Action</h2>
-        <div class="spacer"></div>
-        <div class="spacer"></div>
+        <h2>Success Stories</h2>
+        <div id="testimonialGrid">
+            <div class="testimonial">
+                <p>"...I liked the environmental theme and had an idea I wanted to develop. I found the event made it easy to meet people and form a team. There were a lot of opportunities to talk with the mentors and organizers at all stages the of the event to zero in on what made the idea “pop” and focus on what fleshing that out. Overall the event was fun to attend and my team came out with a few prizes that helped us to continue developing it."</p>
+                <div class="testimonialPhoto">
+                    <img src="https://www.omghowcheap.co.uk/ekmps/shops/omghowcheap/images/birthday-card-blank-puppy-design-large-square-size-6.25-x-6.25-hi0066-5480-p.jpg" />
+                </div>
+                <p class="testimonialName">Sam</p>
+            </div>
+            <div class="testimonial">
+                <p>"...I'm pleased at how much I learned from working with participants with different expertise and perspectives from me! The mentors were incredibly supportive and treated each idea as a legitimate start-up in its early stages, offering constructive feedback to the teams. I would love to participate in an event like this with my own business idea next time around! It's a great way to get a team actively working on an idea that prior would just have remained just that...an idea."</p>
+                <div class="testimonialPhoto">
+                    <img src="https://www.omghowcheap.co.uk/ekmps/shops/omghowcheap/images/birthday-card-blank-puppy-design-large-square-size-6.25-x-6.25-hi0066-5480-p.jpg" />
+                </div>
+                <p class="testimonialName">Masha</p>
+            </div>
+            <div class="testimonial">
+                <p>"BCSEA put on a really strong Hackathon. From the planning to the quality of participants it was the right balance of intense and fun for everyone involved. The Halloween theme, bagels, beers and buddies kept it light and left no stomach unfilled. The environment was friendly collaborative and conducive to great development. The expertise and interest of the volunteers, location and multi-team setting kept it sharp and competitive..."</p>
+                <div class="testimonialPhoto">
+                    <img src="https://www.omghowcheap.co.uk/ekmps/shops/omghowcheap/images/birthday-card-blank-puppy-design-large-square-size-6.25-x-6.25-hi0066-5480-p.jpg" />
+                </div>
+                <p class="testimonialName">Jeremy</p>
+            </div>
+            <div class="testimonial">
+                <p>"...I showed up without a team nor an idea, and I left with close new friends and an app that solved a real problem. The best part of the hackathon was the quality mentorship, workshops, activities - all the support you could ever need - and it was extremely well organized from the opening up until the closing ceremony. I learned so much and I would highly recommend everyone to attend! Building Fly Green was an absolute blast and I can't wait to attend next year!"</p>
+                <div class="testimonialPhoto">
+                    <img src="https://www.omghowcheap.co.uk/ekmps/shops/omghowcheap/images/birthday-card-blank-puppy-design-large-square-size-6.25-x-6.25-hi0066-5480-p.jpg" />
+                </div>
+                <p class="testimonialName">Mesbah</p>
+            </div>
+        </div>
     </section>
     <section id="sponsors">
         <div class="spacer"></div>
@@ -139,31 +179,6 @@
             <img style="width: 150px" src="img/bullfrog.png" alt="Bullfrog Power Logo">
         </a>
         <div class="spacer"></div>
-    </section>
-    <section id="testimonialWrapper">
-        <div id="testimonialGrid">
-            <div class="testimonial">
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-                <div class="testimonialPhoto">
-                    <img src="https://www.omghowcheap.co.uk/ekmps/shops/omghowcheap/images/birthday-card-blank-puppy-design-large-square-size-6.25-x-6.25-hi0066-5480-p.jpg" />
-                </div>
-                <p class="testimonialName">Testimonial Name</p>
-            </div>
-            <div class="testimonial">
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-                <div class="testimonialPhoto">
-                    <img src="https://www.omghowcheap.co.uk/ekmps/shops/omghowcheap/images/birthday-card-blank-puppy-design-large-square-size-6.25-x-6.25-hi0066-5480-p.jpg" />
-                </div>
-                <p class="testimonialName">Testimonial Name</p>
-            </div>
-            <div class="testimonial">
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod "</p>
-                <div class="testimonialPhoto">
-                    <img src="https://www.omghowcheap.co.uk/ekmps/shops/omghowcheap/images/birthday-card-blank-puppy-design-large-square-size-6.25-x-6.25-hi0066-5480-p.jpg" />
-                </div>
-                <p class="testimonialName">Testimonial Name</p>
-            </div>
-        </div>
     </section>
     <section class="darkBg">
         <div id="teamMemberWrapper">
@@ -259,7 +274,7 @@
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-slider/1.0.0/simpleslider.min.js"></script>
     <script>
-        document.querySelector('#plan .backdrop-video').playbackRate = 0.5;
+        document.querySelector('.backdrop-video').playbackRate = 0.5;
     </script>
 </body>
 

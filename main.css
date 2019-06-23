@@ -8,6 +8,7 @@
     letter-spacing: 0.03rem;
 
     /*Theme colors*/
+    --nile: #4aa9eb;
     --ocean: #4f9ac3;
     --clay: #c3894f;
     --eggshell: #fbfbfb;
@@ -18,6 +19,17 @@
 }
 body {
     background-color: #f5f5f5;
+}
+
+a {
+    text-decoration: none;
+    text-shadow: var(--ink) 0px 0px 0px;
+    transition: all 0.3s;
+    color: var(--clay)
+}
+
+a:hover {
+    text-shadow: var(--ink) 0px 0px 5px;
 }
 
 section {
@@ -33,6 +45,10 @@ strong {
 .spacer {
     display: block;
     height: 30px;
+}
+
+.softCenterShadow {
+    box-shadow: inset #476b9e 20px -12px 180px -92px;
 }
 
 #poster {
@@ -114,6 +130,7 @@ h1 {
     position: relative;
     height: 400px;
     background-color: #4f9ac3;
+    background-color: var(--nile);
     margin-top: -145px;
     box-shadow: inset #476b9e 20px -12px 180px -92px;
     color: white;
@@ -123,22 +140,23 @@ h1 {
 }
 
 
-#plan {
-    padding: 30px 20% 0px 20%;
+.backdrop-video-container {
+    /* padding: 30px 20% 0px 20%; */
     text-align: center;
     position: relative;
-    margin-top: 45px;
+    margin-top: -105px;
+    padding: 120px 2%;
+    padding-bottom: 1rem;
 }
-#plan .backdrop-video {
+.backdrop-video {
     position: absolute;
     z-index: -5;
     left: 0;
-    width: 100%;
+    /* width: 100%; */
     /* right: 0; */
     top: 0;
     bottom: 0;
-    /* height: 676px; */
-    margin-top: -150px;
+    height: 100%;
     opacity: 0.5;
 }
 
@@ -166,11 +184,6 @@ h1 {
     background-color: #e6e6e6;
     border-top: solid #bbbbbb 1px;
     border-bottom: solid #bbbbbb 1px;
-}
-#action {
-    align-items: center;
-    justify-content: center;
-    text-align: center;
 }
 
 #sponsors {
@@ -219,7 +232,7 @@ h1 {
 
 #footer {
     z-index: 5;
-    background-color: #16162d;
+    background-color: var(--ocean);
     box-shadow: 0px -2px 10px 2px #00000087;
     color: white;
     text-align: center;
@@ -238,14 +251,15 @@ h1 {
 
 /* TESTIMONIAL SECTION */
 #testimonialWrapper {
-    max-width: 1500px;
-    margin: 0 auto;
-    text-align: left;
-    padding-top: 3rem;
-    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 #testimonialGrid {
+    text-align: left;
+    padding-top: 3rem;
+    position: relative;
     margin-left: 7vw;
     margin-right: 7vw;
     display: flex;
@@ -256,10 +270,10 @@ h1 {
 
 .testimonial {
     display: block;
-    width: 30%;
+    width: 20%;
     min-width: 200px;
-    margin-left: 1%;
-    margin-right: 1%;
+    margin-left: 1rem;
+    margin-right: 1rem;
     padding-bottom: 2rem;
 }
 
@@ -300,87 +314,105 @@ h1 {
         padding-bottom: 1rem;
         width: 90%;
     }
-=======
-a {
-  color: inherit;
 }
 
 /* BLOG AND VIDEO SECTION */
 #blogVideo {
   text-align: center;
-  background-color: #4f9ac3;
-  color: #fbfbfb;
-  max-width: 1600px;
-  margin: 0 auto;
-  padding-bottom: 2rem;
-  padding-top: 2rem;
+  /* background-color: #4f9ac3; */
+  color: #383030;
+  /* max-width: 1600px; */
+  /* margin: 0 auto; */
+  /* padding-bottom: 2rem; */
+  /* padding-top: 2rem; */
 }
 
 #blogVideoGrid {
+    height: 100%;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  align-content: center;
+  align-items: center;
 }
 
 #blogVideoGrid h2 {
   font-weight: bold;
 }
 
+.blogTiles {
+  flex: 1 1.1 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  max-width: 600px;
+  /* height: 17rem; */
+  /* overflow: hidden; */
+}
+.blogTiles h2 {
+    text-align: left;
+    margin-bottom: 1rem;
+}
 .blogTile {
-  width: 55%;
-  height: 17rem;
-  overflow: hidden;
+    display: flex;
+    align-items: center;
+    margin: 1rem 0px;
 }
 
 .videoTile {
-  flex: 0.7;
-  height: 17rem;
-  overflow: hidden;
+  flex: 1 400px;
+  max-width: 600px;
+  /* min-width: 500px; */
+  /* height: 17rem; */
+  /* overflow: hidden; */
 }
 
 .blogPhoto {
-  background: url("https://www.bcsea.org/sites/default/files/styles/fieldcollection_image/public/fc-images/en4s.png?itok=OLdha37o");
-  height: 70%;
-  width: 50%;
-  overflow: hidden;
-  float: left;
-  background-size: cover;
-  background-position: center;
+    height: 120px;
+    width: 150px;
+    /* max-width: 50%; */
+    min-width: 150px;
+    border-radius: 5px;
+    /* height: 50%;
+    width: 50%; */
+    overflow: hidden;
+    float: left;
+    background-size: cover;
+    background-position: center;
 }
 
 .blogText {
-  display: inline-block;
+  /* display: inline-block; */
   text-align: left;
-  width: 50%;
-  padding-left: 0.5rem;
+  /* width: 50%; */
+  padding: 0.25rem 1rem;
 }
 
 @media (max-width: 900px) {
-  .blogTile {
+  /* .blogTile {
     padding-bottom: 4rem;
   }
 
   .blogTile {
     width: 90%;
-  }
+  } */
 
-  .videoTile {
+  /* .videoTile {
     flex: none;
-  }
+  } */
 }
 
 @media (max-width: 500px) {
-  .blogPhoto {
+  /* .blogPhoto {
     width: 100%;
     height: 80%;
     margin-bottom: 0.5rem;
-  }
+  } */
 
-  .blogText {
+  /* .blogText {
     width: 100%;
     padding-left: 0rem;
-  }
+  } */
 }
 
 /* TEAM MEMEBERS SECTION */
@@ -414,8 +446,8 @@ a {
     margin-right: 1%;
     padding-top: 0.5rem;
     margin-bottom: 2rem;
-    background-color: #bbbbbb;
-    box-shadow: 5px 5px 5px #9e9e9e;
+    /* background-color: #bbbbbb;
+    box-shadow: 5px 5px 5px #9e9e9e; */
 }
 
 .teamMemberPhoto {
