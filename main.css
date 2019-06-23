@@ -8,7 +8,8 @@
     letter-spacing: 0.03rem;
 
     /*Theme colors*/
-    --nile: #4aa9eb;
+    /* --nile: #4aa9eb; */
+    --nile: #56cefb;
     --ocean: #4f9ac3;
     --clay: #c3894f;
     --eggshell: #fbfbfb;
@@ -16,7 +17,16 @@
     --ash: #e6e6e6;
     --pencil: #bbbbbb;
     --ink: #272f40;
+    --softTextShadow: #6b6969 0px 0px 4px;
 }
+.opal{
+    background-color: #ffca77;
+    background-image: linear-gradient(120deg, hsl(17, 88%, 63%) 0%, #d94a8a 100%);
+    color: var(--eggshell);
+    text-shadow: var(--softTextShadow);
+}
+
+
 body {
     background-color: #f5f5f5;
 }
@@ -27,10 +37,12 @@ a {
     transition: all 0.3s;
     color: var(--clay)
 }
-
 a:hover {
     text-shadow: var(--ink) 0px 0px 5px;
 }
+h2 {
+    font-weight: bold;
+  }
 
 section {
     color: #272f40;
@@ -134,6 +146,7 @@ h1 {
     margin-top: -145px;
     box-shadow: inset #476b9e 20px -12px 180px -92px;
     color: white;
+    text-shadow: var(--softTextShadow);
 }
 #underPoster .sole-logo {
     display: block;
@@ -158,6 +171,13 @@ h1 {
     bottom: 0;
     height: 100%;
     opacity: 0.5;
+}
+
+@media screen and (min-width: 1660px){
+    .backdrop-video {
+        height: unset;
+        width: 100%;
+    }
 }
 
 #steps {
@@ -187,6 +207,9 @@ h1 {
 }
 
 #sponsors {
+    background-color: white;
+    border-top: solid #bbbbbb 1px;
+    border-bottom: solid #bbbbbb 1px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -232,8 +255,9 @@ h1 {
 
 #footer {
     z-index: 5;
-    background-color: var(--ocean);
+    background-color: var(--nile);
     box-shadow: 0px -2px 10px 2px #00000087;
+    text-shadow: var(--softTextShadow);
     color: white;
     text-align: center;
     padding: 5%;
@@ -335,10 +359,6 @@ h1 {
   align-items: center;
 }
 
-#blogVideoGrid h2 {
-  font-weight: bold;
-}
-
 .blogTiles {
   flex: 1 1.1 400px;
   display: flex;
@@ -431,6 +451,7 @@ h1 {
 }
 
 #teamMemberGrid {
+    max-width: 1000px;
     margin-left: 7vw;
     margin-right: 7vw;
     display: flex;
@@ -439,15 +460,33 @@ h1 {
     align-content: center;
 }
 
+@media screen and (min-width: 980px){
+    #teamMemberGrid {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    div#teamMemberGrid .teamMember:nth-of-type(1), 
+    div#teamMemberGrid .teamMember:nth-of-type(3), 
+    div#teamMemberGrid .teamMember:nth-of-type(5), 
+    div#teamMemberGrid .teamMember:nth-of-type(6), 
+    div#teamMemberGrid .teamMember:nth-of-type(8), 
+    div#teamMemberGrid .teamMember:nth-of-type(10) 
+    {
+        padding-top: 50px;
+    }
+}
+
+
 .teamMember {
     text-align: center;
     width: 9rem;
     margin-left: 1%;
     margin-right: 1%;
     padding-top: 0.5rem;
-    margin-bottom: 2rem;
-    /* background-color: #bbbbbb;
-    box-shadow: 5px 5px 5px #9e9e9e; */
+    margin-bottom: 0.5rem;
+    /* background-color: #bbbbbb; */
+    /* box-shadow: 5px 5px 5px #9e9e9e; */
 }
 
 .teamMemberPhoto {
@@ -458,6 +497,7 @@ h1 {
     overflow: hidden;
     border-radius: 50%;
     margin-bottom: 0.5rem;
+    box-shadow: 0px 0px 7px #424242b0;
 }
 
 .teamMemberPhoto img {
