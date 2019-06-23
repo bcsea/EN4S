@@ -236,11 +236,92 @@ h1 {
     100% { filter: invert(1) }
 }
 
+a {
+  color: inherit;
+}
+
+/* BLOG AND VIDEO SECTION */
+#blogVideo {
+  text-align: center;
+  background-color: #4f9ac3;
+  color: #fbfbfb;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+#blogVideoGrid {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+#blogVideoGrid h2 {
+  font-weight: bold;
+}
+
+.blogTile {
+  width: 55%;
+  height: 17rem;
+  overflow: hidden;
+}
+
+.videoTile {
+  flex: 0.7;
+  height: 17rem;
+  overflow: hidden;
+}
+
+.blogPhoto {
+  background: url("https://www.bcsea.org/sites/default/files/styles/fieldcollection_image/public/fc-images/en4s.png?itok=OLdha37o");
+  height: 70%;
+  width: 50%;
+  overflow: hidden;
+  float: left;
+  background-size: cover;
+  background-position: center;
+}
+
+.blogText {
+  display: inline-block;
+  text-align: left;
+  width: 50%;
+  padding-left: 0.5rem;
+}
+
+@media (max-width: 900px) {
+  .blogTile {
+    padding-bottom: 4rem;
+  }
+
+  .blogTile {
+    width: 90%;
+  }
+
+  .videoTile {
+    flex: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .blogPhoto {
+    width: 100%;
+    height: 80%;
+    margin-bottom: 0.5rem;
+  }
+
+  .blogText {
+    width: 100%;
+    padding-left: 0rem;
+  }
+}
+
 /* TEAM MEMEBERS SECTION */
 #teamMemberWrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    max-width: 1500px;
+    margin: 0 auto;
     text-align: center;
     padding-bottom: 3rem;
     padding-top: 3rem;
@@ -253,7 +334,6 @@ h1 {
 }
 
 #teamMemberGrid {
-    max-width: 1200px;
     margin-left: 7vw;
     margin-right: 7vw;
     display: flex;
