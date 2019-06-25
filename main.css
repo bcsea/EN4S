@@ -180,6 +180,11 @@ h1 {
         width: 100%;
     }
 }
+@media screen and (max-width: 1000px){
+    .backdrop-video {
+        margin-left: -250px;
+    }
+}
 
 #steps {
     display: flex;
@@ -505,6 +510,7 @@ h1 {
     width: auto;
     height: 100%;
     margin-left: 0px;
+    filter: sepia(0.7) hue-rotate(340deg);
 }
 
 .teamMemberName {
