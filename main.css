@@ -40,8 +40,10 @@ a {
 a:hover {
     text-shadow: var(--ink) 0px 0px 5px;
 }
+
 h2 {
     font-weight: bold;
+    font-size: 1.3rem;
   }
 
 section {
@@ -453,7 +455,6 @@ h1 {
 
 #teamMemberWrapper h2 {
     margin-bottom: 2rem;
-    font-size: 1.5rem;
 }
 
 #teamMemberGrid {
@@ -472,12 +473,12 @@ h1 {
         margin-right: auto;
     }
 
-    div#teamMemberGrid .teamMember:nth-of-type(1), 
-    div#teamMemberGrid .teamMember:nth-of-type(3), 
-    div#teamMemberGrid .teamMember:nth-of-type(5), 
-    div#teamMemberGrid .teamMember:nth-of-type(6), 
-    div#teamMemberGrid .teamMember:nth-of-type(8), 
-    div#teamMemberGrid .teamMember:nth-of-type(10) 
+    div#teamMemberGrid .teamMember:nth-of-type(1),
+    div#teamMemberGrid .teamMember:nth-of-type(3),
+    div#teamMemberGrid .teamMember:nth-of-type(5),
+    div#teamMemberGrid .teamMember:nth-of-type(6),
+    div#teamMemberGrid .teamMember:nth-of-type(8),
+    div#teamMemberGrid .teamMember:nth-of-type(10)
     {
         padding-top: 50px;
     }
