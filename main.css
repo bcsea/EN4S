@@ -66,6 +66,7 @@ strong {
 }
 
 #poster {
+    color: white;
     position: relative;
     width: 100%;
     display: flex;
@@ -96,16 +97,25 @@ strong {
     justify-content: center;
 }
 
-#poster p {
-    color: white;
+#poster #posterText {
     line-height: 1.8;
     width: 35%;
     position: absolute;
     right: 10vw;
 }
 
+#poster #links {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+#poster #links a {
+    color: white;
+}
+
 @media (max-width: 700px) {
-    #poster p {
+    #poster #posterText {
         position: static;
         line-height: 1.1;
         width: 80%;
@@ -123,16 +133,15 @@ h1 {
     letter-spacing: 22px;
 }
 .ghostButton {
-    color: #fbfbfb;
+    color: white;
     padding: 10px;
-    border: solid 2px #fbfbfb;
-    border-radius: 5px;
+    border: solid 2px white;
+    border-radius: 25px;
     text-decoration-line: none;
     transition: all 0.4s;
 }
 .ghostButton:hover {
     background-color: white;
-    border-color: white;
     color: black;
 }
 #twitter::before {
@@ -175,6 +184,7 @@ h1 {
 #underPoster p {
     text-align: center;
     width: 80%;
+    font-weight: bold;
 }
 
 @media (max-width: 700px) {
