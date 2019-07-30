@@ -485,6 +485,12 @@ h1 {
   } */
 }
 
+/* TIMELINE SECTION */
+.timeline {
+    width: 100%;
+    vertical-align: middle;
+}
+
 /* TEAM MEMEBERS SECTION */
 #teamMemberWrapper {
     max-width: 1500px;
