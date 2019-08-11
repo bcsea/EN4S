@@ -310,10 +310,14 @@ h1 {
     text-shadow: var(--softTextShadow);
     color: white;
     text-align: center;
-    padding: 5%;
+    padding: 2.5%;
 }
 #footer a {
     color: var(--ink);
+}
+
+.icons img {
+  height: 2rem;
 }
 
 @keyframes sp00ky {
